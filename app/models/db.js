@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
   password: "root123",
   database: "school",
   authPlugins: {
-    mysql_native_password: () => () => Buffer.from("Harsh@1234")
+    mysql_native_password: () => () => Buffer.from("root123")
   }
 });
 
